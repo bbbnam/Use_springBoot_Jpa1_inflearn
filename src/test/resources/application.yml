@@ -1,0 +1,19 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test  <- 이게 메모리 모드 but, 스프링 부트는 기본으로 지원
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+##        show_sql: true #system out으로 출력 (org.hibernate.SQL과 비교)
+#        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug #logger로 출력(show_sql과 비교)
+    org.hibernate.type: trace
